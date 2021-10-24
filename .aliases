@@ -1,0 +1,42 @@
+# `ls`-related aliases
+
+alias l='ls --color=auto'
+alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
+alias ll='ls -ll --color=auto'
+
+# git related aliases
+
+alias gcl='git clone'
+alias gdi='git diff'
+alias gpl='git pull'
+alias gpu='git push'
+
+function gcm(){
+  git add .
+  git commit -m $1
+}
+
+# `venv`-related aliases
+
+function vn(){
+
+  if [ -z "$1" ]; then
+    python3 -m venv .
+  else
+    python3 -m venv $1
+  fi
+}
+
+function va(){
+
+  if [ -z "$1" ]; then
+    source ./bin/activate
+  else
+    source $1
+  fi
+}
+
+alias vd='deactivate'
+
+# `pip`-related aliases
