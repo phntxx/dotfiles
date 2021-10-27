@@ -46,11 +46,6 @@ My `vim` customization consists of two packages:
    https://raw.githubusercontent.com/joshdick/onedark.vim/main/autoload/lightline/colorscheme/onedark.vim
    ```
 
-# TODO
-
-- add `.osx` file
-- all of the aliases!
-
 [arch-linux]: https://archlinux.org
 [macos]: https://www.apple.com/macos/
 [oh-my-zsh]: https://github.com/ohmyzsh/ohmyzsh
