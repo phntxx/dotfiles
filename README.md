@@ -23,6 +23,7 @@ As a baseline, they can be differentiated by the following criteria:
 - [oh-my-zsh][oh-my-zsh] recommends that the `.aliases`-file is not sourced via `.zshrc`, but
   instead placed under `~/.oh-my-zsh/custom/`. As a result, the following should be executed when
   using [oh-my-zsh][oh-my-zsh]:
+  
   ```sh
   mv .aliases ~/.oh-my-zsh/custom/aliases.zsh
   ```
