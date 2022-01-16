@@ -1,6 +1,6 @@
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
+[submodule "oh-my-zsh/.oh-my-zsh"]
+	path = oh-my-zsh/.oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
-[submodule ".vim/pack/plugins/start/lightline"]
-	path = .vim/pack/plugins/start/lightline
+[submodule "vim/.vim/pack/plugins/start/lightline"]
+	path = vim/.vim/pack/plugins/start/lightline
 	url = https://github.com/itchyny/lightline.vim
