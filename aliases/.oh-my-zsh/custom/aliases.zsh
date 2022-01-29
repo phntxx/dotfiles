@@ -5,12 +5,6 @@ alias la='ls -la'
 alias ll='ls -ll'
 
 # git related aliases
-alias gin='git init'
-alias gcl='git clone'
-alias gdi='git diff'
-alias gpl='git pull'
-alias gpu='git push'
-
 function gcm(){
   git add .
   git commit -m $1
@@ -41,6 +35,11 @@ function va(){
 }
 
 alias vd='deactivate'
+
+# `ansible`-related aliases
+
+alias ag='ansible-galaxy'
+alias ap='ansible-playbook'
 
 # `pip`-related aliases
 
