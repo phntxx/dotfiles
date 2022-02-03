@@ -1,13 +1,13 @@
 # `ls`-related aliases
-alias l='ls'
-alias ls='ls'
-alias la='ls -la'
-alias ll='ls -ll'
+alias l='ls --color=auto'
+alias ls='ls --color=auto'
+alias la='ls -la --color=auto'
+alias ll='ls -ll --color=auto'
 
 # git related aliases
 function gcm(){
-  git add .
-  git commit -m $1
+	git add .
+	git commit -m $1
 }
 
 function ghc() {
@@ -19,7 +19,7 @@ function ghc() {
 # `venv`-related aliases
 
 function vn(){
-  if [ -n "$1" ]; then
+	if [ -n "$1" ]; then
 		python3 -m venv "$1"
 	else
 		python3 -m venv ./venv
@@ -27,7 +27,7 @@ function vn(){
 }
 
 function va(){
-  if [ -n "$1" ]; then
+	if [ -n "$1" ]; then
 		source $1
 	else
 		source ./venv/bin/activate
