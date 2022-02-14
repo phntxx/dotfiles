@@ -1,6 +1,6 @@
 [submodule "vim/.vim/pack/plugins/start/lightline"]
 	path = vim/.vim/pack/plugins/start/lightline
 	url = https://github.com/itchyny/lightline.vim
-[submodule "powerlevel10k/.powerlevel10k/powerlevel10k"]
+[submodule "powerlevel10k/.powerlevel10k"]
 	path = powerlevel10k/.powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
