@@ -1,6 +1,12 @@
 [submodule "vim/.vim/pack/plugins/start/lightline"]
 	path = vim/.vim/pack/plugins/start/lightline
 	url = https://github.com/itchyny/lightline.vim
-[submodule "powerlevel10k/.powerlevel10k"]
-	path = powerlevel10k/.powerlevel10k
-	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "zsh/.zsh/plugins/powerlevel10k"]
+	path = zsh/.zsh/plugins/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k
+[submodule "zsh/.zsh/plugins/zsh-autosuggestions"]
+	path = zsh/.zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "zsh/.zsh/plugins/zsh-syntax-highlighting"]
+	path = zsh/.zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
