@@ -5,33 +5,19 @@ alias la='ls -la --color=auto'
 alias ll='ls -ll --color=auto'
 
 # git related aliases
-function gcm(){
-	git add .
-	git commit -m $1
-}
-
 function ghc() {
-	if [ -n $1 ]; then
-		git clone git@github.com:$1 $2
-	fi
+	[ -n $1 ] && [ -n $2 ] && git clone git@github.com:$1 $2
 }
 
 # `venv`-related aliases
-
 function vn(){
-	if [ -n "$1" ]; then
-		python3 -m venv "$1"
-	else
-		python3 -m venv ./venv
-	fi
+	directory="./venv" && [[ -n $1 ]]  && directory="$1"
+	python3 -m venv $directory
 }
 
 function va(){
-	if [ -n "$1" ]; then
-		source $1
-	else
-		source ./venv/bin/activate
-	fi
+	directory="./venv/bin/activate" && [[ -n $1 ]] && directory="$1"
+	source $directory
 }
 
 alias vd='deactivate'
@@ -44,3 +30,4 @@ alias ap='ansible-playbook'
 # `pip`-related aliases
 
 # other aliases
+alias reset_zcompdump='rm -f ~/.zcompdump; compinit'
