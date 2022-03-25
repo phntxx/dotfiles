@@ -4,7 +4,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Load aliases
-source ~/.zsh/aliases/*.zsh
+for file in ~/.zsh/aliases/*.zsh; do
+  source "${file}"
+done
+unset file
 
 # Load plugins
 source ~/.zsh/plugins.zsh
