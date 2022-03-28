@@ -27,7 +27,12 @@ alias vd='deactivate'
 alias ag='ansible-galaxy'
 alias ap='ansible-playbook'
 
-# `pip`-related aliases
+# `docker`-related aliases
+
+function reset_docker(){
+	[ -n "$(docker ps -q)" ] && docker kill "$(docker ps -q)"
+	docker system prune -a -f
+}
 
 # other aliases
 alias reset_zcompdump='rm -f ~/.zcompdump; compinit'
