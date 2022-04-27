@@ -36,3 +36,4 @@ function reset_docker(){
 
 # other aliases
 alias reset_zcompdump='rm -f ~/.zcompdump; compinit'
+
