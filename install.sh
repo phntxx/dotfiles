@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DEPENDENCIES=("starship" "stow")
+DEPENDENCIES=("starship" "lsd" "stow")
 
 update_repository() {
   echo "Updating this repository."
