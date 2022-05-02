@@ -1,6 +1,11 @@
+# vim plugins
+
 [submodule "vim/.vim/pack/plugins/start/lightline"]
 	path = vim/.vim/pack/plugins/start/lightline
 	url = https://github.com/itchyny/lightline.vim
+
+# zsh plugins
+
 [submodule "zsh/.zsh/plugins/powerlevel10k"]
 	path = zsh/.zsh/plugins/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
