@@ -1,69 +1,67 @@
-format = """
-[](#9A348E)\
-$username\
-[](bg:#DA627D fg:#9A348E)\
-$directory\
-[](fg:#DA627D bg:#FCA17D)\
-$git_branch\
-$git_status\
-[](fg:#FCA17D bg:#86BBD8)\
-$nodejs\
-$rust\
-[](fg:#86BBD8 bg:#33658A)\
-$time\
-[ ](fg:#33658A)\
-"""
-
 # Disable the blank line at the start of the prompt
 # add_newline = false
 
-# You can also replace your username with a neat symbol like  to save some space
+[cmd_duration]
+min_time = 5000
+style = ""
+format = '[\[ $duration \]]($style)'
+
 [username]
-show_always = true
-style_user = "bg:#9A348E"
-style_root = "bg:#9A348E"
-format = '[$user ]($style)'
+show_always = false
+style_user = ""
+style_root = ""
+format = '[\[ $user \]]($style)'
+
+[sudo]
+disabled = false
+symbol = ""
+style = ""
+format = '[\[ $symbol \]]($style)'
 
 [directory]
-style = "bg:#DA627D"
-format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
+style = ""
+format = "[ $path ]($style)"
 
-# Here is how you can shorten some long paths by text replacement
-# similar to mapped_locations in Oh My Posh:
 [directory.substitutions]
+"Documents/Programming" = " "
+"Documents/Configuration" = "漣 "
 "Documents" = " "
 "Downloads" = " "
-"Music" = " "
+"Music" = "ﱘ "
 "Pictures" = " "
-# Keep in mind that the order matters. For example:
-# "Important Documents" = "  "
-# will not be replaced, because "Documents" was already substituted before.
-# So either put "Important Documents" before "Documents" or use the substituted version:
-# "Important  " = "  "
+"Desktop" = " "
 
 [git_branch]
 symbol = ""
-style = "bg:#FCA17D"
-format = '[[ $symbol $branch ](bg:#FCA17D)]($style)'
+style = ""
+format = '[\[ $symbol $branch \]]($style)'
+
+[git_commit]
+style = ""
+format = '[\[ $hash$tag \]]($style)'
+
+[git_state]
+
+[git_metrics]
 
 [git_status]
-style = "bg:#FCA17D"
-format = '[[($all_status$ahead_behind )](bg:#FCA17D)]($style)'
+style = ""
+format = '[\[ $all_status$ahead_behind \]]($style)'
 
-[nodejs]
-symbol = ""
-style = "bg:#86BBD8"
-format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
+
+[java]
+symbol = ""
+
+[python]
+symbol = ""
+pyenv_version_name = true
 
 [rust]
 symbol = ""
-style = "bg:#86BBD8"
+style = ""
 format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
 
 [time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:#33658A"
-format = '[[ ♥ $time ](bg:#33658A)]($style)'
+disabled = true

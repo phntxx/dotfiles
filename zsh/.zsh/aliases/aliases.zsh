@@ -1,8 +1,8 @@
 # `ls`-related aliases
-alias l='ls --color=auto'
-alias ls='ls --color=auto'
-alias la='ls -la --color=auto'
-alias ll='ls -ll --color=auto'
+alias l='lsd'
+alias ls='lsd'
+alias la='lsd -la'
+alias ll='lsd -ll'
 
 # git related aliases
 function ghc() {
@@ -36,4 +36,3 @@ function reset_docker(){
 
 # other aliases
 alias reset_zcompdump='rm -f ~/.zcompdump; compinit'
-
