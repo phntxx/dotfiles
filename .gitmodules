@@ -1,5 +1,18 @@
 # dotbot
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
 
+# dotbot plugins
+[submodule "dotbot-plugins/ifplatform"]
+	path = dotbot-plugins/ifplatform
+	url = https://github.com/ssbanerje/dotbot-ifplatform
+[submodule "dotbot-plugins/omnipkg"]
+	path = dotbot-plugins/omnipkg
+	url = https://github.com/code-maniac/dotbot-omnipkg
+
+# zsh plugins
 [submodule "zsh/plugins/zsh-autosuggestions"]
 	path = zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
@@ -9,12 +22,4 @@
 [submodule "zsh/plugins/zsh-history-substring-search"]
 	path = zsh/plugins/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
-[submodule "dotbot"]
-	path = dotbot
-	url = https://github.com/anishathalye/dotbot
-[submodule "dotbot-plugins/ifplatform"]
-	path = dotbot-plugins/ifplatform
-	url = https://github.com/ssbanerje/dotbot-ifplatform
-[submodule "dotbot-plugins/omnipkg"]
-	path = dotbot-plugins/omnipkg
-	url = https://github.com/code-maniac/dotbot-omnipkg
+
