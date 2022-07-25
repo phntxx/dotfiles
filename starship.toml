@@ -16,52 +16,42 @@ format = '[\[ $user \]]($style)'
 disabled = false
 symbol = ""
 style = ""
-format = '[\[ $symbol \]]($style)'
+format = '[\[$symbol \]]($style)'
+
+[package]
+symbol = ""
+format = '[\[$symbol $version\]]($style)'
+
+[python]
+symbol = ""
+style = "yellow bold"
+format = '[\[$symbol $virtualenv\]]($style)'
+
+[nodejs]
+symbol = ""
+format = '[\[$symbol \]]($style)'
+
+[rust]
+symbol = ""
+format = '[\[$symbol \]]($style)'
+
+[git_branch]
+symbol = ""
+format = '[\[$symbol $branch\]]($style)'
+
+[git_status]
+format = '[\[$all_status$ahead_behind\]]($style)'
 
 [directory]
 truncation_length = 3
 truncation_symbol = "…/"
-style = ""
-format = "[ $path ]($style)"
 
 [directory.substitutions]
 "Documents/Programming" = " "
 "Documents/Configuration" = "漣 "
+"Documents/University" = "拾 "
 "Documents" = " "
 "Downloads" = " "
 "Music" = "ﱘ "
 "Pictures" = " "
 "Desktop" = " "
-
-[git_branch]
-symbol = ""
-style = ""
-format = '[\[ $symbol $branch \]]($style)'
-
-[git_commit]
-style = ""
-format = '[\[ $hash$tag \]]($style)'
-
-[git_state]
-
-[git_metrics]
-
-[git_status]
-style = ""
-format = '[\[ $all_status$ahead_behind \]]($style)'
-
-
-[java]
-symbol = ""
-
-[python]
-symbol = ""
-pyenv_version_name = true
-
-[rust]
-symbol = ""
-style = ""
-format = '[[ $symbol ($version) ](bg:#86BBD8)]($style)'
-
-[time]
-disabled = true

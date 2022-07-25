@@ -1,0 +1,31 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ["~"]
+
+# update & upgrade system, install dependencies
+- omnipkg:
+    - update
+    - upgrade
+    - install: [starship, lsd]
+
+# update the submodules within this repository
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
+# make sure that .zsh exists to prevent awkward linking issues
+- create:
+    - ~/.zsh
+
+# link all relevant files
+- link:
+    ~/.vimrc: vim/.vimrc
+    ~/.zshrc: zsh/.zshrc
+    ~/.config/starship.toml: starship.toml
+    ~/.zsh/aliases: zsh/aliases
+    ~/.zsh/plugins: zsh/plugins
+
+- ifmacos:
+    - link:
+        ~/.inputrc: macos/.inputrc

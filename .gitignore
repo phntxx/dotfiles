@@ -1,3 +1,5 @@
 .DS_Store
-.stow-local-ignore
+install
+
+patches.conf.yaml
 /patches

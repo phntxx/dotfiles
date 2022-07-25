@@ -9,8 +9,11 @@ for file in ~/.zsh/aliases/*.zsh; do
 done
 unset file
 
+# Load starship
+eval "$(starship init zsh)"
+
 # Load plugins
-source ~/.zsh/plugins.zsh
+source ~/.zsh/plugins/index.zsh
 
 # Reconfigure up- and down-arrows for zsh-history-substring-search
 bindkey '\e[A' history-substring-search-up
