@@ -1,0 +1,14 @@
+#!/bin/bash
+
+git submodule update --init
+cp dotbot/tools/git-submodule/install .
+
+cat << EOF
+All done!
+
+To install these dotfiles, run:
+
+./install --plugin-dir dotbot-plugins/ifplatform --plugin-dir dotbot-plugins/omnipkg
+
+Have fun!
+EOF
