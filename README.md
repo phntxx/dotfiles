@@ -12,10 +12,9 @@ To use this repository, follow these steps:
 ```sh
 # Clone and enter the repository, initialize all submodules
 git clone https://github.com/phntxx/dotfiles && cd -
-git submodule update --init
 
-# Copy installer
-cp dotbot/tools/git-submodule/install .
+# Run initializer
+./init
 
 # Run installer with plugin flags
 ./install \
