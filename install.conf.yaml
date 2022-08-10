@@ -25,7 +25,6 @@
     ~/.config/starship.toml: starship.toml
     ~/.zsh/aliases: zsh/aliases
     ~/.zsh/plugins: zsh/plugins
-
-- ifmacos:
-    - link:
-        ~/.inputrc: macos/.inputrc
+    ~/.inputrc:
+      if: "[ `uname` = Darwin ]"
+      path: macos/.inputrc
