@@ -5,9 +5,6 @@
 	ignore = dirty
 
 # dotbot plugins
-[submodule "dotbot-plugins/ifplatform"]
-	path = dotbot-plugins/ifplatform
-	url = https://github.com/ssbanerje/dotbot-ifplatform
 [submodule "dotbot-plugins/omnipkg"]
 	path = dotbot-plugins/omnipkg
 	url = https://github.com/code-maniac/dotbot-omnipkg
@@ -22,16 +19,3 @@
 [submodule "zsh/plugins/zsh-history-substring-search"]
 	path = zsh/plugins/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
-
-[submodule "grub/matter"]
-	path = grub/matter
-	url = https://github.com/mateosss/matter.git
-[submodule "gnome/whitesur-icon-theme"]
-	path = gnome/whitesur-icon-theme
-	url = https://github.com/vinceliuice/whitesur-icon-theme.git
-[submodule "gnome/whitesur-cursors"]
-	path = gnome/whitesur-cursors
-	url = https://github.com/vinceliuice/whitesur-cursors.git
-[submodule "gnome/whitesur-gtk-theme"]
-	path = gnome/whitesur-gtk-theme
-	url = https://github.com/vinceliuice/whitesur-gtk-theme.git

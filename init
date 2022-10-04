@@ -8,7 +8,7 @@ All done!
 
 To install these dotfiles, run:
 
-./install --plugin-dir dotbot-plugins/ifplatform --plugin-dir dotbot-plugins/omnipkg
+./install --plugin-dir dotbot-plugins/omnipkg
 
 Have fun!
 EOF

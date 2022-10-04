@@ -8,7 +8,7 @@
 - omnipkg:
     - update
     - upgrade
-    - install: [starship, lsd]
+    - install: [starship, lsd, helix]
 
 # update the submodules within this repository
 - shell:
@@ -20,7 +20,7 @@
 
 # link all relevant files
 - link:
-    ~/.vimrc: vim/.vimrc
+    ~/.config/helix/config.toml: helix.toml
     ~/.zshrc: zsh/.zshrc
     ~/.config/starship.toml: starship.toml
     ~/.zsh/aliases: zsh/aliases
