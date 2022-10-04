@@ -18,6 +18,5 @@ git clone https://github.com/phntxx/dotfiles && cd -
 
 # Run installer with plugin flags
 ./install \
-  --plugin-dir dotbot-plugins/ifplatform \
   --plugin-dir dotbot-plugins/omnipkg
 ```
