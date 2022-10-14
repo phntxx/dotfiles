@@ -1,6 +1,10 @@
 # Disable the blank line at the start of the prompt
 # add_newline = false
 
+[character]
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
+
 [cmd_duration]
 min_time = 5000
 style = ""
