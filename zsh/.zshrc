@@ -1,16 +1,11 @@
-# Enable Powerlevel10k instant prompt.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+# Load starship
+eval "$(starship init zsh)"
 
 # Load aliases
 for file in ~/.zsh/aliases/*.zsh; do
   source "${file}"
 done
 unset file
-
-# Load starship
-eval "$(starship init zsh)"
 
 # Load plugins
 source ~/.zsh/plugins/index.zsh

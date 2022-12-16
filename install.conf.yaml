@@ -1,3 +1,4 @@
+---
 - defaults:
     link:
       relink: true
@@ -7,7 +8,6 @@
 # update & upgrade system, install dependencies
 - omnipkg:
     - update
-    - upgrade
     - install: [starship, lsd, helix]
 
 # update the submodules within this repository
@@ -17,14 +17,29 @@
 # make sure that .zsh exists to prevent awkward linking issues
 - create:
     - ~/.zsh
+    - ~/.zsh/aliases
 
 # link all relevant files
 - link:
-    ~/.config/helix/config.toml: helix.toml
+    # `zsh` related files
     ~/.zshrc: zsh/.zshrc
-    ~/.config/starship.toml: starship.toml
-    ~/.zsh/aliases: zsh/aliases
     ~/.zsh/plugins: zsh/plugins
+    ~/.zsh/aliases:
+      glob: true
+      path: zsh/aliases/*
+      exclude:
+        - zsh/aliases/macos.zsh
+        - zsh/aliases/linux.zsh
+    ~/.zsh/aliases/linux.zsh:
+      if: "[ `uname` = Linux ]"
+      path: zsh/aliases/linux.zsh
+    ~/.zsh/aliases/macos.zsh:
+      if: "[ `uname` = Darwin ]"
+      path: zsh/aliases/macos.zsh
+
+    # files related to other applications
+    ~/.config/helix/config.toml: helix.toml
+    ~/.config/starship.toml: starship.toml
     ~/.inputrc:
       if: "[ `uname` = Darwin ]"
       path: macos/.inputrc
