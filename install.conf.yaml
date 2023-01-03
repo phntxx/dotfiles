@@ -43,3 +43,6 @@
     ~/.inputrc:
       if: "[ `uname` = Darwin ]"
       path: macos/.inputrc
+    ~/.zprofile:
+      if: "[ `uname` = Darwin ]"
+      path: macos/.zprofile
