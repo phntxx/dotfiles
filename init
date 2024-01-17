@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This is a test! Hello World!
+
 git submodule update --init --recursive
 cp dotbot/tools/git-submodule/install .
 
