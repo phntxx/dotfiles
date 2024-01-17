@@ -1,6 +1,9 @@
 # Load starship
 eval "$(starship init zsh)"
 
+# Define relevant variables
+EDITOR=hx
+
 # Load aliases
 for file in ~/.zsh/aliases/*.zsh; do
   source "${file}"

@@ -7,3 +7,9 @@ source $ZSH_PLUGIN_DIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $ZSH_PLUGIN_DIR/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 unset ZSH_PLUGIN_DIR
+
+if type brew &>/dev/null; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+  autoload -Uz compinit
+  compinit
+fi
