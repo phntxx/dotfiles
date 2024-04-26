@@ -8,41 +8,17 @@
 # update & upgrade system, install dependencies
 - omnipkg:
     - update
-    - install: [starship, lsd, helix]
+    - install: [starship, eza, helix]
 
-# update the submodules within this repository
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
-
-# make sure that .zsh exists to prevent awkward linking issues
+# make sure that .config/fish exists to prevent awkward linking issues
 - create:
-    - ~/.zsh
-    - ~/.zsh/aliases
+    - ~/.config/fish
 
 # link all relevant files
 - link:
-    # `zsh` related files
-    ~/.zshrc: zsh/.zshrc
-    ~/.zsh/plugins: zsh/plugins
-    ~/.zsh/aliases:
-      glob: true
-      path: zsh/aliases/*
-      exclude:
-        - zsh/aliases/macos.zsh
-        - zsh/aliases/linux.zsh
-    ~/.zsh/aliases/linux.zsh:
-      if: "[ `uname` = Linux ]"
-      path: zsh/aliases/linux.zsh
-    ~/.zsh/aliases/macos.zsh:
-      if: "[ `uname` = Darwin ]"
-      path: zsh/aliases/macos.zsh
+    # `fish` related files
+    ~/.config/fish/config.fish: fish/config.fish
+    ~/.config/fish/aliases.fish: fish/aliases.fish
 
-    # files related to other applications
-    ~/.config/helix/config.toml: helix.toml
+
     ~/.config/starship.toml: starship.toml
-    ~/.inputrc:
-      if: "[ `uname` = Darwin ]"
-      path: macos/.inputrc
-    ~/.zprofile:
-      if: "[ `uname` = Darwin ]"
-      path: macos/.zprofile
