@@ -14,6 +14,10 @@ alias vi='hx'
 alias vim='hx'
 alias nano='hx'
 
+# miscellaneous aliases
+
+alias to_aiff='afconvert -d BEI24 -f "AIFF"'
+
 # python-related aliases
 
 function vn
