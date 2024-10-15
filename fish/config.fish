@@ -3,7 +3,4 @@ if status is-interactive
 end
 
 source ~/.config/fish/aliases.fish
-
-set PATH $PATH /Users/bastian.meissner/.local/bin /opt/homebrew/bin
-
 starship init fish | source

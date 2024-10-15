@@ -8,7 +8,7 @@
 # update & upgrade system, install dependencies
 - omnipkg:
     - update
-    - install: [fish, starship, eza, helix]
+    - install: [fish, starship, eza, helix, yazi]
 
 # make sure that .config/fish exists to prevent awkward linking issues
 - create:

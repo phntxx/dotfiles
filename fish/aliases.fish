@@ -8,11 +8,13 @@ alias ls='eza --grid --icons --hyperlink'
 alias la='eza --grid --icons --hyperlink -la'
 alias ll='eza --grid --icons --hyperlink -ll'
 
+alias yy='yazi'
+
 # `vi`/`vim`-related aliases
 # Friendship ended with vi/vim, now helix is my best friend
-alias vi='hx'
-alias vim='hx'
-alias nano='hx'
+alias vi='helix'
+alias vim='helix'
+alias nano='helix'
 
 # miscellaneous aliases
 
