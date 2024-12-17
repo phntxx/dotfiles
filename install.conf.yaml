@@ -19,6 +19,4 @@
     # `fish` related files
     ~/.config/fish/config.fish: fish/config.fish
     ~/.config/fish/aliases.fish: fish/aliases.fish
-
-
     ~/.config/starship.toml: starship.toml

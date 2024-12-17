@@ -12,12 +12,14 @@ alias yy='yazi'
 
 # `vi`/`vim`-related aliases
 # Friendship ended with vi/vim, now helix is my best friend
+set EDITOR /usr/bin/helix
 alias vi='helix'
 alias vim='helix'
 alias nano='helix'
 
 # miscellaneous aliases
 
+# this only works on macos, on purpose
 alias to_aiff='afconvert -d BEI24 -f "AIFF"'
 
 # python-related aliases
@@ -68,4 +70,11 @@ function ds-jupyter
     -p 8888:8888 \
     -v $PWD:/home/jovyan \
     jupyter/datascience-notebook
+end
+
+function ds-adminer
+  docker run \
+    --rm \
+    --network host \
+    adminer
 end
