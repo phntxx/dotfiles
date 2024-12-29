@@ -1,6 +1,4 @@
-# ansible-related aliases
-alias ag='ansible-galaxy'
-alias ap='ansible-playbook'
+
 
 # `ls`-related aliases
 alias l='eza --grid --icons --hyperlink'
@@ -10,24 +8,50 @@ alias ll='eza --grid --icons --hyperlink -ll'
 
 alias yy='yazi'
 
-# `vi`/`vim`-related aliases
-# Friendship ended with vi/vim, now helix is my best friend
 set EDITOR /usr/bin/helix
-alias vi='helix'
-alias vim='helix'
-alias nano='helix'
+alias edit='$EDITOR'
 
-# miscellaneous aliases
+# conversion-related aliases
 
-# this only works on macos, on purpose
-alias to_aiff='afconvert -d BEI24 -f "AIFF"'
+function to_aiff
+  
+  if test -f $argv[1]
+    set -f source "$argv[1]"
+  else
+    return 1
+  end
+
+  if test $argv[2]
+    set -f target "$argv[2]"
+  else
+    set -f target "$(path change-extension 'aiff' $argv[1])"
+  end
+
+  ffmpeg -i "$source" -acodec "pcm_s24be" "$target"
+end
+
+
+function to_mp3
+
+  if test -f $argv[1]
+    set -f source "$argv[1]"
+  else
+    return 1
+  end
+
+  if test $argv[2]
+    set -f target "$argv[2]"
+  else
+    set -f target "$(path change-extension 'mp3' $argv[1])"
+  end
+
+  ffmpeg -i "$source" -f mp3 -acodec libmp3lame -ab 192000 -ar 44100 "$target"
+end
 
 # python-related aliases
 
 function vn
   set -f directory "venv"
-
-  echo $argv[1]
   if test $argv[1]
     set directory "$argv[1]"
   end
@@ -45,6 +69,11 @@ function va
 end
 
 alias vd='deactivate'
+
+# ansible-related aliases
+
+alias ag='ansible-galaxy'
+alias ap='ansible-playbook'
 
 # docker-related aliases
 
