@@ -18,29 +18,29 @@ format = '[\[ $user \]]($style)'
 
 [sudo]
 disabled = false
-symbol = ""
+symbol = " "
 style = ""
 format = '[\[$symbol \]]($style)'
 
 [package]
-symbol = ""
+symbol = "  "
 format = '[\[$symbol $version\]]($style)'
 
 [python]
-symbol = ""
+symbol = " "
 style = "yellow bold"
 format = '[\[$symbol $virtualenv\]]($style)'
 
 [nodejs]
-symbol = ""
+symbol = " "
 format = '[\[$symbol \]]($style)'
 
 [rust]
-symbol = ""
+symbol = " "
 format = '[\[$symbol \]]($style)'
 
 [git_branch]
-symbol = ""
+symbol = " "
 format = '[\[$symbol $branch\]]($style)'
 
 [git_status]
@@ -52,10 +52,10 @@ truncation_symbol = "…/"
 
 [directory.substitutions]
 "Documents/Programming" = " "
-"Documents/Configuration" = "漣 "
-"Documents/University" = "拾 "
-"Documents" = " "
+"Documents/Configuration" = " "
+"Documents/University" = " "
+"Documents" = " "
 "Downloads" = " "
-"Music" = "ﱘ "
-"Pictures" = " "
+"Music" = " "
+"Pictures" = " "
 "Desktop" = " "
