@@ -1,0 +1,106 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    
+    "logo": {
+      "padding": {
+        "left": 2
+      },
+      "height": 10
+    },
+    "general": {
+      "multithreading": true
+    },
+    "display": {
+      "key": {
+        "type": "icon"
+      },
+      "separator": ""
+    },
+    "modules": [
+      {
+        "type": "separator",
+        "length": 30,
+        "string": ""
+      },
+      {
+        "type": "custom",
+        "format": "Hardware Information"
+      },
+      {
+        "type": "host",
+        "keyIcon": "󰟀 ",
+        "format": "{version}"
+      },
+      {
+        "type": "cpu",
+        "keyIcon": "󰻠 ",
+        "format": "{name}"
+      },
+      {
+        "type": "gpu",
+        "keyIcon": "󰘚 ",
+        "format": "{name}"
+      },
+      {
+        "type": "memory",
+        "keyIcon": "󰍛 ",
+        "format": "{used} / {total} ({percentage})"
+      },
+      {
+        "type": "disk",
+        "keyIcon": "󰋊 ",
+        "format": "{size-used} / {size-total} ({size-percentage})"
+      },
+      {
+        "type": "uptime",
+        "keyIcon": "󰔚 ",
+        "format": ""
+      },
+      {
+        "type": "separator",
+        "length": 30,
+        "string": ""
+      },
+      {
+        "type": "custom",
+        "format": "Software Information"
+      },
+      {
+        "type": "os",
+        "keyIcon": "󰌽 ",
+        "format": "{pretty-name}"
+      },
+      {
+        "type": "de",
+        "keyIcon": "󰍹 ",
+        "format": "{pretty-name}"
+      },
+      {
+        "type": "packages",
+        "keyIcon": "󰏖 ",
+        "format": "{all}"
+      },
+      {
+        "type": "terminal",
+        "keyIcon": "󱃷 ",
+        "format": "{pretty-name}"
+      },
+      {
+        "type": "shell",
+        "keyIcon": "󰞷 ",
+        "format": "{pretty-name}"
+      },
+      {
+        "type": "separator",
+        "length": 30,
+        "string": ""
+      },
+      {
+        "type": "colors",
+        "symbol": "square",
+        "block": {
+          "width": 10
+        }
+      }
+    ]
+  }

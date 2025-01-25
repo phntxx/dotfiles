@@ -1,0 +1,11 @@
+{
+    "git.confirmSync": false,
+    "terminal.integrated.fontFamily": "ComicCodeLigatures Nerd Font",
+    "terminal.integrated.fontLigatures": true,
+    "terminal.integrated.fontSize": 12,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "git.openRepositoryInParentFolders": "never"
+}

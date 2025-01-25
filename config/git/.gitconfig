@@ -1,0 +1,12 @@
+[user]
+        signingkey = 78518BAF80621AB0
+        name = Bastian
+        email = meissner.bastian@me.com
+[commit]
+        gpgsign = true
+[tag]
+        gpgSign = true
+[core]
+        editor = helix
+[init]
+        defaultBranch = main

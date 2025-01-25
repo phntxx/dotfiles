@@ -1,0 +1,61 @@
+# Disable the blank line at the start of the prompt
+# add_newline = false
+
+[character]
+success_symbol = "[](bold green)"
+error_symbol = "[](bold red)"
+
+[cmd_duration]
+min_time = 5000
+style = ""
+format = '[\[ $duration \]]($style)'
+
+[username]
+show_always = false
+style_user = ""
+style_root = ""
+format = '[\[ $user \]]($style)'
+
+[sudo]
+disabled = false
+symbol = " "
+style = ""
+format = '[\[$symbol\]]($style)'
+
+[package]
+symbol = "  "
+format = '[\[$symbol$version\]]($style)'
+
+[python]
+symbol = " "
+style = "yellow bold"
+format = '[\[$symbol$virtualenv\]]($style)'
+
+[nodejs]
+symbol = " "
+format = '[\[$symbol\]]($style)'
+
+[rust]
+symbol = " "
+format = '[\[$symbol\]]($style)'
+
+[git_branch]
+symbol = " "
+format = '[\[$symbol$branch\]]($style)'
+
+[git_status]
+format = '[\[$all_status$ahead_behind\]]($style)'
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents/Programming" = " "
+"Documents/Configuration" = " "
+"Documents/University" = " "
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Desktop" = " "

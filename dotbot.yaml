@@ -1,0 +1,37 @@
+---
+- defaults:
+    link:
+      relink: true
+
+- clean:
+    - "~"
+
+- create:
+    - "~/.config/zsh"
+    - "~/.config/helix"
+    - "~/.config/fastfetch"
+    - "~/.vscode-oss"
+
+- link:
+    # zsh
+    ~/.zshrc: "config/zsh/.zshrc"
+    ~/.config/zsh/_antigen.zsh: "config/zsh/_antigen.zsh"
+    ~/.config/zsh/alias.zsh: "config/zsh/alias.zsh"
+
+    # Git
+    ~/.gitconfig: "config/git/.gitconfig"
+
+    # Starship
+    ~/.config/starship.toml: "config/starship/starship.toml"
+
+    # Helix
+    ~/.config/helix/config.toml: "config/helix/config.toml"
+
+    # Fastfetch
+    ~/.config/fastfetch/config.jsonc: "config/fastfetch/config.jsonc"
+
+    # Visual Studio Code (OSS)
+    ~/.config/Code - OSS/User/settings.json: "config/vscode/settings.json"
+    ~/.config/Code - OSS/User/keybindings.json: "config/vscode/keybindings.json"
+    ~/.vscode-oss/argv.json: "config/vscode/argv.json"
+    ~/.vscode-oss/extensions.json: "config/vscode/extensions.json"
