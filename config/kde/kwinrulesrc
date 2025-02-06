@@ -1,0 +1,13 @@
+[General]
+count=1
+rules=c9268715-7f93-4d42-a4be-507e7499452b
+
+[c9268715-7f93-4d42-a4be-507e7499452b]
+Description=PiP always on top
+above=true
+aboverule=3
+title=Picture-in-Picture
+titlematch=1
+types=1
+wmclass=firefox
+wmclassmatch=1

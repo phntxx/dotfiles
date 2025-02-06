@@ -35,3 +35,8 @@
     ~/.config/Code - OSS/User/keybindings.json: "config/vscode/keybindings.json"
     ~/.vscode-oss/argv.json: "config/vscode/argv.json"
     ~/.vscode-oss/extensions.json: "config/vscode/extensions.json"
+
+    # KDE
+    ~/.config/krunnerrc: "config/kde/krunnerrc"
+    ~/.config/ksmserverrc: "config/kde/ksmserverrc"
+    ~/.config/kwinrulesrc: "config/kde/kwinrulesrc"
