@@ -9,6 +9,7 @@ alias ll="eza --grid --icons --hyperlink -ll"
 
 alias yy="yazi"
 
+alias open="xdg-open"
 alias edit="$EDITOR"
 alias trash="gio trash"
 
