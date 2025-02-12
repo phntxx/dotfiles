@@ -40,3 +40,7 @@
     ~/.config/krunnerrc: "config/kde/krunnerrc"
     ~/.config/ksmserverrc: "config/kde/ksmserverrc"
     ~/.config/kwinrulesrc: "config/kde/kwinrulesrc"
+    
+    # Konsole
+    ~/.local/share/konsole/default.profile: "config/konsole/default.profile"
+    ~/.local/share/konsole/: "config/konsole/themes/**"
