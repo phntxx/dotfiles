@@ -5,7 +5,10 @@
     "terminal.integrated.fontSize": 12,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', monospace",
     "terminal.integrated.defaultProfile.linux": "zsh",
-    "git.openRepositoryInParentFolders": "never"
+    "git.openRepositoryInParentFolders": "never",
+    "workbench.colorTheme": "Catppuccin Latte",
+    "workbench.iconTheme": "catppuccin-latte",
+    "workbench.productIconTheme": "bongocat"
 }
