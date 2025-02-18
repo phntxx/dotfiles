@@ -9,6 +9,7 @@
 - create:
     - "~/.config/zsh"
     - "~/.config/helix"
+    - "~/.config/yazi"
     - "~/.config/fastfetch"
     - "~/.vscode-oss"
 
@@ -43,4 +44,9 @@
     
     # Konsole
     ~/.local/share/konsole/default.profile: "config/konsole/default.profile"
-    ~/.local/share/konsole/: "config/konsole/themes/**"
+    ~/.local/share/konsole/:
+        glob: true
+        path: "config/konsole/themes/**"
+
+    # Yazi
+    ~/.config/yazi/theme.toml: "config/yazi/theme.toml"

@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=Catpuccin Macchiato
+ColorScheme=Catpuccin Mocha
 Font=Comic Code Ligatures,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 IgnoreWcWidth=true
 UseFontLineChararacters=true
